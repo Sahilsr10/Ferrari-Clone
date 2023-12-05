@@ -1,0 +1,240 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,100;1,200;1,600;1,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; 
+}
+:root{
+    --main-color: red;
+    --second-color: red;
+    --text-color: #faf7f7;
+    --gradient: linear-gradient(red, red);
+    background-color: black;
+}
+/* Custom Scroll Bar */
+html::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+
+section{
+    padding: 50px 100px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    padding: 15px 100px;
+}
+.logo img {
+    width: 40px;
+}
+.navbar {
+    display: flex;
+}
+.navbar li{
+    position: relative;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.navbar a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--gradient);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+.header-btn a{
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+    
+}
+.header-btn a{
+    color: #FFF;
+}
+.header-btn a:hover {
+    background: var(--main-color);
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: url(https://wallpapercave.com/wp/wp8049558.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+}
+p {
+    color: white;
+    text-align: justify;
+}
+h1 {
+    color: white;
+    text-align: justify;
+}
+span {
+    color: red;
+}
+.text {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: -150px 200px;
+}
+p {
+    grid-column: 2;
+}
+h1 {
+    grid-column: 2;
+}  
+.heading h2{
+    color: aliceblue;
+    font-size: 2rem;
+}
+.heading span {
+    color: red;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.heading{
+    text-align: center;
+}
+.ride-container p{
+    color: white;
+}
+.ride-container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.ride-container box{
+    text-align: center;
+    padding: 20px;
+}
+.ride-container .box .bx {
+    font-size: 34px;
+    padding: 10px;
+    background: #eeeff1;
+    border-radius: 0.5rem;
+    color: var(--main-color);
+}
+.ride-container .box h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 1.4rem 0 0.5rem;
+    color: white;
+}
+.ride-container .box .bx:hover,
+.ride-container .box .bxs-calender-heart {
+    background: var(--gradient);
+    color: #FFF;
+}
+.ride {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: url(https://wallpapercave.com/wp/wp8049214.jpg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.services-container .box{
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+}
+.services-container .box .box-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: center;
+}
+.services-container .box p{
+    padding: 0 10px;
+    border: 1px solid var(--text-color);
+    width: 58px;
+    border-radius: 0.5rem;
+    margin: 1rem 0 1rem;
+}
+.services-container .box h3{
+    font-weight: 500;
+    color: aliceblue;
+}
+.services-container .box h2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--main-color);
+    margin: 0.2rem 0 0.5rem;
+}
+.ride span{
+    color: aliceblue;
+}
+.ride h2{
+    color: aliceblue;
+}
+.services {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: url(https://wallpapercave.com/wp/wp9278734.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.btn {
+    color: aliceblue;
+}
+
+.heading>span{
+    color: purple;
+    margin-right: 260px;
+}
+
